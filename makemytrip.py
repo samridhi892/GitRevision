@@ -10,3 +10,5 @@ count = 0
 for image in images:
     count += 1
 print(count)
+
+# commnet added to check git clone
