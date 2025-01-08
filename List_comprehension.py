@@ -85,3 +85,105 @@ numbers = range(1,1000)
 div = [(num,d) for num in numbers for d in digit if num%d == 0]
 
 print(div)
+
+print("********************************")
+#1. Create a List of Squares of numbers from 1 to 10
+
+squares = [i*i for i in range(1,11)]
+print(squares)
+
+print("********************************")
+#2. Create a List of Even numbers from 1 to 20
+even = [i for i in range(1,21) if i%2 ==0]
+print(even)
+
+print("********************************")
+#3. Generate a list of characters from a string
+text = "Hello World"
+char = [char for char in text if char!=' ']
+print(char)
+
+print("********************************")
+#4Create a list of lengths of words in a sentence
+text = "This is a sample sentence"
+output = [len(word) for word in text.split()]
+print(output)
+
+print("********************************")
+#5. Generate a list of tuples containing a number and its square
+squares = [(num,num*num) for num in range(1,6)]
+print(squares)
+
+print("********************************")
+#8. Create a list of even numbers squared and odd numbers cubed from 1 to 10
+output = [num*num if num%2 == 0 else num*num*num for num in range(1,11)]
+print(output)
+
+print("********************************")
+#9. Generate a list of common multiples of 3 and 5 up to 100
+output = [num for num in range(1,100) if num%3==0 and num%5 ==0]
+print(output)
+
+print("********************************")
+#10. Create a list of reversed strings from another list
+sample = ['apple', 'banana', 'cherry']
+output = [word[::-1] for word in sample]
+print(output)
+
+print("********************************")
+#11. Generate a list of prime numbers from 1 to 50
+# def check_prime(n):
+#     for i in range(2,n):
+#         if n%i == 0:
+#             return n
+#
+#
+# prime = [check_prime(num) for num in range(1,50)]
+# print(prime)
+print("********************************")
+#12. Create a list of squares of even numbers and cubes of odd numbers from -5 to 5
+
+squares = [num*num if num%2==0 else num*num*num for num in range(-5,6)]
+print(squares)
+
+print("********************************")
+#13. Generate a list of strings with their lengths from another list
+sample = ['apple', 'banana', 'cherry']
+
+length = [(word , len(word)) for word in sample]
+print(length)
+
+print("********************************")
+#14. Create a list of first characters from a list of words
+
+sample = ['apple', 'banana', 'cherry']
+output =[char[0] for char in sample]
+print(output)
+
+print("********************************")
+#15. Generate a list of numbers with their squares if the number is even
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+squares = [num*num for num in numbers if num%2 == 0]
+print(squares)
+
+print("********************************")
+#16. Create a list of uppercase words from a sentence
+text = "This is a sample sentence"
+
+text_upper = [word.upper() for word in text.split()]
+print(text_upper)
+
+print("********************************")
+#17. Generate a list of strings with vowels removed
+sample = ['apple', 'banana', 'cherry']
+output = [word.replace(char,'')for word in sample for char in 'aeiou']
+print(output)
+
+
+
+
+
+
+
+
+

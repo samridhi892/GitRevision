@@ -29,4 +29,18 @@ def dic_merge(ls1):
     d1 = {k: v for k, v in zip(odd_ls1, even_ls1)}
     print(d1)
 
-dic_merge([1,2,3,4,5,6,7,8,9,10])
+
+dic_merge([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+
+numbers = [1, 2, 2, 3, 4, 4, 5, 6]
+unique_list = []
+d = {}
+for num in numbers:
+    if num in d:
+        d[num] += 1
+    else:
+        d[num] = 1
+for k, v in d.items():
+    if v == 1:
+        unique_list.append(k)
+print(unique_list)
